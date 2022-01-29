@@ -8,7 +8,7 @@ const indexRouter = require('./routes');
 const calendarsRouter = require('./routes/calendars');
 
 const app = express();
-app.set('port', process.env.PORT || 3001);
+app.set('port', process.env.PORT || 80);
 app.set('view engine', 'html');
 nunjucks.configure('views', {
   express: app,
