@@ -9,11 +9,11 @@ module.exports = class Calendar extends Sequelize.Model {
         unique: true,
       },
       start: {
-        type: Sequelize.TIME,
+        type: Sequelize.STRING(20),
         allowNull: true,
       },
       finish: {
-        type: Sequelize.TIME,
+        type: Sequelize.STRING(20),
         allowNull: true,
       },
      
